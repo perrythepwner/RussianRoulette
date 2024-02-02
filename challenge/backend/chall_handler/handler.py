@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import logging
-logging.basicConfig(filename='/var/log/ctf/gunicorn.error.log', level=logging.ERROR, 
+logging.basicConfig(filename='/var/log/ctf/gunicorn.error.log', level=logging.ERROR,
                     format='%(asctime)s %(levelname)s %(name)s %(message)s')
 logger=logging.getLogger(__name__)
 
@@ -10,7 +10,7 @@ try:
     from pathlib import Path
     import eth_sandbox
     from web3 import Web3
-    
+
 
     def deploy(web3: Web3, deployer_address: str) -> str:
         web3.provider.make_request("anvil_setBalance", [deployer_address, hex(Web3.to_wei(11, 'ether'))])

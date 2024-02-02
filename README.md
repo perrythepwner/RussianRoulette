@@ -4,7 +4,7 @@
 
 > Date: 31<sup>st</sup> January 2024 \
 Challenge Author: <font color=#1E9F9A>perrythepwner</font> \
-Difficulty: <font color=lightgreen>Very Easy</font> \
+Difficulty: <font color=green>Very Easy</font> \
 Category: <font color=orange> Blockchain</font>
 
 # TL;DR
