@@ -12,25 +12,25 @@ Category: <font color=orange> Blockchain</font>
 - This challenge aims to be an entry level / warmup for the blockchain category. In order to solve, players need to send a bunch of transactions until they get lucky (i.e. pulling the trigger until the contract shot himself).
 
 
-## Description
+# Description
 
 ```
 Welcome adventurer.  
 This is a warm-up to test if you have what it takes to tackle the thorny challenges of the realm. Are you brave enough to try to win this bag?
 ```
 
-## Skills Required
+# Skills Required
 
 - Smart contract interaction.
 
 
-## Skills Learned
+# Skills Learned
 
 - Smart contract interaction.
 - Block dependency
 
 
-## Challenge scenario
+# Challenge scenario
 
 Players will find an instance of a challenge handler when the challenge is launched, as well as the related smart contracts source code.
 The main objective of this warmup challenge is to understand how to interact with a smart contract.  
@@ -135,7 +135,7 @@ Calling the function a bunch of times until we get lucky will do the work.
 That's called a Block Dependency issue, even if an unprotected selfdestruct on random function calls won't be a smart idea anyway :P
 
 
-## Exploitation
+# Exploitation
 
 ```python
 while True:
